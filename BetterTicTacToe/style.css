@@ -66,6 +66,7 @@ body {
     font-size: 75px;
 }
 .o::before {
-    content: 'O';
-    font-size: 75px;
+    content: '○';
+    font-size: 125px;
+    padding-bottom: 20px;
 }
