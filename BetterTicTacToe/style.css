@@ -12,8 +12,6 @@ body {
 }
 
 .container {
-    width: 500px;
-    height:500px;
     margin: 50px;
     padding:50px;
     background: blue;
@@ -26,4 +24,48 @@ body {
 
 .title span {
     color: white;
+}
+
+.status-action {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.reset:hover {
+    color:white;
+}
+
+.grid-contain {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:15px;
+    margin-top: 50px;
+    background: darkblue;
+
+}
+
+.grid-cell {
+    background: blue;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x::before {
+    content: 'X';
+    font-size: 75px;
+}
+.o::before {
+    content: 'O';
+    font-size: 75px;
 }
